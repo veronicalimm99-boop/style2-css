@@ -1,0 +1,19 @@
+@media (max-width: 768px) {
+.home-page {
+background: #000000 url(https://raintoto-hujan.b-cdn.net/background%20pc%20raintotos.jpg)!important;
+background-size: 100% !important;
+background-attachment: fixed !important;
+}
+}
+.home-page__login {
+    background-color: #ffffff00 !important;
+}
+.resulthistorypage__container, .depositpage__rules, .withdrawpage__rules, .userreferralpage__detail-container, .usermemopage__container, .resulthistory__wrapper, .usertransactionpage__container {
+    background: #0000006b !important;
+}
+.progresif-jackpot {
+    background: url(https://raintoto-hujan.b-cdn.net/progresive%20jackpot%20raintoto%20webp.webp) center/100% !important;
+    font-size: 20px !important;
+    margin: 0px auto !important;
+
+}
