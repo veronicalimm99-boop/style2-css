@@ -31,3 +31,225 @@ background-attachment: fixed !important;
   max-height: none !important;
   overflow: visible !important;
 }
+
+==========================
+  APK & LINK ALT
+==========================
+*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* BOX UTAMA */
+.maxwin-box {
+  width: 100%;
+  max-width: 100%;
+  margin: auto;
+  background: linear-gradient(180deg, #06185f 0%, #031044 48%, #01031a 100%);
+  border: 2px solid #ffd84a;
+  border-radius: 14px;
+  padding: 8px;
+  box-shadow:
+    0 0 10px rgba(31, 167, 255, 0.75),
+    0 0 24px rgba(0, 86, 255, 0.45),
+    inset 0 0 12px rgba(255, 224, 60, 0.14);
+  display: flex;
+  gap: 8px;
+  align-items: stretch;
+}
+
+#apk-box-ui {
+  margin-top: 10px;
+}
+#apk-box-ui {
+  width: 100%;
+  max-width: 100%;
+  margin: 10px 0 16px;
+  box-sizing: border-box;
+}
+
+#apk-box-ui .maxwin-box {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+/* KIRI */
+.left-panel {
+  width: 52%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 4px 4px 4px 0;
+}
+
+.right-panel {
+  width: 48%;
+  border: 2px solid #07006e;
+  border-radius: 12px;
+  padding: 2px;
+  background: #000;
+}
+
+/* QR IMAGE */
+.right-panel img {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+}
+
+/* TEXT */
+.headline {
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.headline span {
+  color: #ffffff;
+  display: block;
+  margin-top: 2px;
+}
+
+.headline .line-1,
+.headline .line-2 {
+  display: block;
+  white-space: nowrap;
+}
+
+.headline .line-2 {
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.main-link {
+  display: block;
+  width: 100%;
+  background: linear-gradient(180deg, #07006e, #07006e);
+  color: #ffffff;
+  border: 1px solid #ffd700 !important;
+  font-weight: 700;
+  text-align: center;
+  padding: 5px 4px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 10px;
+  margin-bottom: 8px;
+  white-space: nowrap;
+}
+
+
+/* LABEL */
+.label {
+  font-size: 9px;
+  font-weight: 700;
+  margin-bottom: 3px;
+  color: #fff;
+  text-align: center;
+}
+
+select {
+  width: 100%;
+  padding: 4px 24px 4px 8px;
+  border-radius: 6px;
+  border: none;
+  background-color: #ffffff;
+  font-size: 10px !important;
+  font-weight: 700 !important;
+  color: #000000 !important;
+  margin-bottom: 10px;
+  outline: none;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='black' stroke-width='3.2' stroke-linecap='round' stroke-linejoin='round'><polyline points='6 9 12 15 18 9'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 8px center;
+  background-size: 12px;
+}
+
+.copy-btn {
+  background: linear-gradient(180deg, #07006e, #07006e);
+  color: #ffffff;
+  border: 1px solid #ffd700 !important;
+  padding: 5px 10px;
+  font-size: 9px;
+  font-weight: 700;
+  border-radius: 6px;
+  cursor: pointer;
+  width: fit-content;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.note {
+  font-size: 8px;
+  line-height: 1.2;
+  color: #fff;
+  margin-bottom: 2px;
+}
+
+/* EFFECT SILAU */
+.main-link,
+.search-btn,
+.copy-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.main-link::before,
+.search-btn::before,
+.copy-btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 40%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    transparent,
+    rgba(255,255,255,0.4),
+    transparent
+  );
+  transform: skewX(-25deg);
+  animation: shineMove 2.5s linear infinite;
+}
+
+@keyframes shineMove {
+  0% { left: -75%; }
+  100% { left: 130%; }
+}
+.search-note {
+  font-size: 8px;
+  font-weight: 700;
+  color: #fff;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 4px;
+  line-height: 1.2;
+}
+
+.search-btn {
+  display: inline-block;
+  background: linear-gradient(180deg, #07006e, #07006e);
+  color: #ffffff;
+  border: 1px solid #ffd700 !important;
+  font-size: 9px;
+  font-weight: 700;
+  width: 100%;
+  text-align: center;
+  padding: 5px 4px;
+  border-radius: 6px;
+  text-decoration: none;
+  white-space: nowrap;
+}
+.search-wrap {
+  margin-top: 4px;
+  padding-top: 4px;
+  border-top: 1px solid rgba(7,0,110);
+}
