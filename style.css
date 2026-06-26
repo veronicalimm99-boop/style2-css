@@ -17,3 +17,17 @@ background-attachment: fixed !important;
     margin: 0px auto !important;
 
 }
+/* ===== FOOTER CONTENT FULL TANPA BUTTON LIHAT SELEBIHNYA ===== */
+.home-page__footer-button {
+  display: none !important;
+}
+
+.home-page__footer,
+.home-page__footer-content,
+.home-page__footer-content-collapse,
+.article-baru-dptoto,
+.dptoto-article-premium {
+  height: auto !important;
+  max-height: none !important;
+  overflow: visible !important;
+}
