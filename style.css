@@ -32,11 +32,18 @@ background-attachment: fixed !important;
     position: relative !important;
     overflow: hidden !important;
 
-    background: transparent !important;
-    background-color: linear-gradient( 180deg, rgba(150, 245, 255, 1) 0%, rgba(45, 190, 245, 1) 32%, rgba(9, 115, 220, 1) 68%, rgba(4, 48, 125, 1) 100% ) !important;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(7, 42, 105, 0.92) 0%,
+            rgba(4, 85, 160, 0.96) 45%,
+            rgba(2, 38, 100, 0.94) 100%
+        ) !important;
+    background-color: #062f7a !important;
 
     color: #ffffff !important;
-    border: 1px solid currentColor !important;
+
+    border: 1px solid rgba(0, 235, 255, 0.95) !important;
     border-radius: 999px !important;
 
     box-shadow: none !important;
@@ -45,18 +52,28 @@ background-attachment: fixed !important;
     transition: all 0.25s ease !important;
 }
 
-/* hapus efek glossy putih bagian atas */
+/* tombol daftar & promosi tetap satu tema */
+.mobile-before-layout__container .btn--danger .btn__inner,
+.mobile-before-layout__container .btn--danger .btn__inner--danger,
+.mobile-before-layout__container .btn--success .btn__inner,
+.mobile-before-layout__container .btn--success .btn__inner--success {
+    background:
+        linear-gradient(
+            180deg,
+            rgba(4, 55, 115, 0.92) 0%,
+            rgba(3, 115, 160, 0.96) 45%,
+            rgba(2, 42, 96, 0.94) 100%
+        ) !important;
+    background-color: #053d7a !important;
+}
+
+/* hapus efek glossy lama */
 .mobile-before-layout__container .btn--info .btn__inner::before,
 .mobile-before-layout__container .btn--info .btn__inner--info::before,
 .mobile-before-layout__container .btn--danger .btn__inner::before,
 .mobile-before-layout__container .btn--danger .btn__inner--danger::before,
 .mobile-before-layout__container .btn--success .btn__inner::before,
-.mobile-before-layout__container .btn--success .btn__inner--success::before {
-    display: none !important;
-    content: none !important;
-}
-
-/* hapus efek garis bawah glossy */
+.mobile-before-layout__container .btn--success .btn__inner--success::before,
 .mobile-before-layout__container .btn--info .btn__inner::after,
 .mobile-before-layout__container .btn--info .btn__inner--info::after,
 .mobile-before-layout__container .btn--danger .btn__inner::after,
@@ -67,27 +84,33 @@ background-attachment: fixed !important;
     content: none !important;
 }
 
-/* text tetap ikut warna bawaan */
+/* text */
 .mobile-before-layout__container .btn--info .btn__inner > *,
 .mobile-before-layout__container .btn--info .btn__inner--info > *,
 .mobile-before-layout__container .btn--danger .btn__inner > *,
 .mobile-before-layout__container .btn--danger .btn__inner--danger > *,
 .mobile-before-layout__container .btn--success .btn__inner > *,
 .mobile-before-layout__container .btn--success .btn__inner--success > * {
+    color: #ffffff !important;
     position: relative !important;
     z-index: 3 !important;
-    color: inherit !important;
 }
 
-/* hover tetap transparan */
+/* hover / tap */
 .mobile-before-layout__container .btn--info .btn__inner:hover,
 .mobile-before-layout__container .btn--info .btn__inner--info:hover,
 .mobile-before-layout__container .btn--danger .btn__inner:hover,
 .mobile-before-layout__container .btn--danger .btn__inner--danger:hover,
 .mobile-before-layout__container .btn--success .btn__inner:hover,
 .mobile-before-layout__container .btn--success .btn__inner--success:hover {
-    background: transparent !important;
-    background-color: linear-gradient( 180deg, rgba(150, 245, 255, 1) 0%, rgba(45, 190, 245, 1) 32%, rgba(9, 115, 220, 1) 68%, rgba(4, 48, 125, 1) 100% ) !important;
+    background:
+        linear-gradient(
+            180deg,
+            rgba(0, 95, 185, 0.98) 0%,
+            rgba(0, 150, 210, 0.98) 45%,
+            rgba(0, 55, 135, 0.98) 100%
+        ) !important;
+    background-color: #0757b0 !important;
     box-shadow: none !important;
     text-shadow: none !important;
 }
